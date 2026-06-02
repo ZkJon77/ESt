@@ -1,25 +1,11 @@
-// app/layout.tsx
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-// ─── Fontes ───────────────────────────────────────────────────────────────────
-const geist = Geist({
-  subsets: ['latin'],
-  variable: '--font-sans',
-  display: 'swap',
-  preload: true,
-})
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' })
+const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-mono' })
 
-const geistMono = Geist_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
-  display: 'swap',
-  preload: false,
-})
-
-// ─── Viewport ─────────────────────────────────────────────────────────────────
 export const viewport: Viewport = {
   themeColor: '#1a1464',
   width: 'device-width',
@@ -27,7 +13,6 @@ export const viewport: Viewport = {
   maximumScale: 5,
 }
 
-// ─── Metadados ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: {
     default: 'Silver Tintas | Loja de Tintas em Campinas',
@@ -51,7 +36,9 @@ export const metadata: Metadata = {
   creator: 'Silver Tintas',
   publisher: 'Silver Tintas',
   metadataBase: new URL('https://silvertintas.com.br'),
-  alternates: { canonical: '/' },
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
@@ -94,37 +81,14 @@ export const metadata: Metadata = {
   category: 'shopping',
 }
 
-// ─── Constantes ───────────────────────────────────────────────────────────────
-const isProduction = process.env.NODE_ENV === 'production'
-
-// ─── Layout ───────────────────────────────────────────────────────────────────
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="pt-BR"
-      suppressHydrationWarning
-      className={`${geist.variable} ${geistMono.variable}`}
-    >
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </head>
-
-      <body className="font-sans antialiased">
-        {/* Skip link — primeiro elemento focável; permite pular o nav com teclado */}
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:shadow-md focus:outline-none"
-        >
-          Pular para o conteúdo principal
-        </a>
-
-        {/* Landmark principal — leitores de tela pulam direto para cá */}
-        <main id="main-content">{children}</main>
-
-        {isProduction && <Analytics />}
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}>
+        {children}
+        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
