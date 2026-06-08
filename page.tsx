@@ -33,19 +33,120 @@ interface ToastData {
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
 const PRODUCTS: Product[] = [
-  { id: 1, name: "Coral Rende Muito 18L", price: 259.90, imageUrl: "https://images.tcdn.com.br/img/img_prod/650361/tinta_acrilica_fosco_completo_coral_branco_18l_4025_1_20200422151912.jpg", category: "Tintas", brand: "Coral", stars: 5, coverage: 400, description: "Tinta acrílica fosco de alta cobertura e durabilidade." },
-  { id: 2, name: "Suvinil Cor & Proteção 18L", price: 289.90, imageUrl: "https://m.media-amazon.com/images/I/61kJlFbPaoL._AC_SX679_.jpg", category: "Tintas", brand: "Suvinil", stars: 5, coverage: 380, description: "Tinta premium com proteção UV e resistência à umidade." },
-  { id: 3, name: "Rolo de Pintura 23cm Atlas", price: 19.80, imageUrl: "https://images.tcdn.com.br/img/img_prod/650361/rolo_de_la_para_pintura_atlas_15cm_4025_1_20200422151912.jpg", category: "Ferramentas para Pintura", brand: "Atlas", stars: 4, description: "Rolo de lã para aplicação uniforme." },
-  { id: 4, name: "Acabamento Iquine 3,6L", price: 205.90, imageUrl: "https://cdn.awsli.com.br/2500x2500/1869/1869036/produto/153855114/3ca522bacc.jpg", category: "Tintas", brand: "Iquine", stars: 4, coverage: 360, description: "Acabamento semibrilho resistente a limpeza." },
-  { id: 5, name: "Tinta PU Automotiva Preto 3,6L", price: 189.90, imageUrl: "https://tse4.mm.bing.net/th/id/OIP.4zWZc9F3nS2uR6pTj6m0UQHaHa", category: "Tintas", brand: "Coral", stars: 5, coverage: 320 },
-  { id: 6, name: "Primer PU Cinza 3,6L", price: 149.90, imageUrl: "https://tse3.mm.bing.net/th/id/OIP.qO6MysNn7M8jYzY2wqKz6QHaHa", category: "Impermeabilizante", brand: "Suvinil", stars: 4, coverage: 280 },
-  { id: 7, name: "Verniz PU Alto Brilho 900ml", price: 59.90, imageUrl: "https://cdn.awsli.com.br/600x700/1347/1347540/produto/53873337/thinner-900ml-anjo.jpg", category: "Sprays", brand: "Natrielli", stars: 5 },
-  { id: 8, name: "Esmalte Sintético Branco 3,6L", price: 89.90, imageUrl: "https://m.media-amazon.com/images/I/5156f0sCGDL._AC_SX679_.jpg", category: "Tintas", brand: "Sherwin-Williams", stars: 5, coverage: 350 },
-  // Accessories
-  { id: 9, name: "Fita Crepe Profissional 48mm", price: 8.90, imageUrl: "https://m.media-amazon.com/images/I/71yh4R5VBPL._AC_SX679_.jpg", category: "Acessórios", brand: "3M", stars: 5, description: "Fita crepe para acabamentos precisos." },
-  { id: 10, name: "Massa Corrida PVA 25kg", price: 89.90, imageUrl: "https://m.media-amazon.com/images/I/61b6sFNbKBL._AC_SX679_.jpg", category: "Acessórios", brand: "Suvinil", stars: 4, description: "Massa corrida para nivelamento de paredes." },
-  { id: 11, name: "Bandeja para Rolo 23cm", price: 12.90, imageUrl: "https://m.media-amazon.com/images/I/51PNZjU8aRL._AC_SX679_.jpg", category: "Ferramentas para Pintura", brand: "Atlas", stars: 4, description: "Bandeja plástica reforçada." },
-  { id: 12, name: "Lona Plástica 4x4m", price: 24.90, imageUrl: "https://m.media-amazon.com/images/I/71Kl7e7y9ML._AC_SX679_.jpg", category: "Acessórios", brand: "Cortinas", stars: 4, description: "Proteção de piso e móveis durante pintura." },
+  {
+    id: 1,
+    name: "Eucatex Protege 18L",
+    price: 365.40,
+    imageUrl: "https://lojaeucatex.vtexassets.com/arquivos/ids/168579/protege-18-l.png?v=638588362063130000",
+    category: "Tintas",
+    brand: "Eucatex",
+    stars: 5,
+    coverage: 400,
+    description: "Tinta acrílica fosco de alta cobertura e durabilidade."
+  },
+  {
+    id: 2,
+    name: "Suvinil Cor & Proteção ",
+    price: 289.90,
+    imageUrl: "https://lojasuvinil.vteximg.com.br/arquivos/ids/905034/esmalte-suvinil-cor-protecao-acetinado-base-solvente-branco-neve-3-6l.jpg?v=638094842956100000",
+    category: "Tintas",
+    brand: "Suvinil",
+    stars: 5,
+    coverage: 380,
+    description: "Tinta premium com proteção UV e resistência à umidade."
+  },
+  {
+    id: 3,
+    name: "Rolo de Pintura 23cm Atlas",
+    price: 19.80,
+    imageUrl: "https://images.tcdn.com.br/img/img_prod/765502/conjunto_de_pintura_la_mista_23cm_atlas_9425_1_20200612155121.png",
+    category: "Ferramentas para Pintura",
+    brand: "Atlas",
+    stars: 4,
+    description: "Rolo de lã para aplicação uniforme."
+  },
+  {
+    id: 4,
+    name: "Kit verniz 0,900",
+    price: 205.90,
+    imageUrl: "https://cdn.awsli.com.br/2500x2500/1869/1869036/produto/153855114/3ca522bacc.jpg",
+    category: "Tintas",
+    brand: "Iquine",
+    stars: 4,
+    coverage: 360,
+    description: "Acabamento semibrilho resistente a limpeza."
+  },
+  {
+    id: 5,
+    name: "Lazzuril Preto Cadilac Pu 2,7L",
+    price: 189.90,
+    imageUrl: "https://img.irroba.com.br/fit-in/600x600/filters:format(webp):fill(transparent):quality(80)/construt/catalog/sherwin-williams/red-esmalte-pu-preto-cadillac-2-7-litros-lazzuril-2.png",
+    category: "Tintas",
+    brand: "Lazzuril",
+    stars: 5,
+    coverage: 320
+  },
+  {
+    id: 6,
+    name: "Primer Universal Cinza 3,6L ",
+    price: 149.90,
+    imageUrl: "https://bite.vteximg.com.br/arquivos/ids/158249/28134.jpg?v=636615448624870000",
+    category: "Impermeabilizante",
+    brand: "anjo",
+    stars: 4,
+    coverage: 280
+  },
+  
+  {
+    id: 8,
+    name: "Esmalte Sintético Branco 3,6L",
+    price: 89.90,
+    imageUrl: "https://m.media-amazon.com/images/I/5156f0sCGDL._AC_SL1000_.jpg",
+    category: "Tintas",
+    brand: "Sherwin-Williams",
+    stars: 5,
+    coverage: 350
+  },
+  {
+    id: 9,
+    name: "Fita Crepe Profissional 48mm",
+    price: 8.90,
+    imageUrl: "https://www.condor.ind.br/cache/produto/EdxkslPraqybIP7AHl0nElY0Y6UQGh-metaMTIyNC0xMjQ4LSgzKS5wbmc=--546-546-fit.webp",
+    category: "Acessórios",
+    brand: "Condor",
+    stars: 5,
+    description: "Fita crepe para acabamentos precisos."
+  },
+  {
+    id: 10,
+    name: "Massa Corrida PVA 25kg",
+    price: 89.90,
+    imageUrl: "https://cdn.leroymerlin.com.br/products/massa_pva_corrida_eucatex_balde_25kg_1572096855_4352_600x600.jpg",
+    category: "Acessórios",
+    brand: "Eucatex",
+    stars: 4,
+    description: "Massa corrida para nivelamento de paredes."
+  },
+  {
+    id: 11,
+    name: "Bandeja para Rolo 23cm",
+    price: 12.90,
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdjz-j_xODuHB9LSjyOznDCeJS1VY_vuhLQ&s",
+    category: "Ferramentas para Pintura",
+    brand: "Atlas",
+    stars: 4,
+    description: "Bandeja plástica reforçada."
+  },
+  {
+    id: 12,
+    name: "Lona Plástica 4x4m",
+    price: 24.90,
+    imageUrl: "https://images.tcdn.com.br/img/img_prod/1018104/lona_plastica_4x4_preta_sacaria_abraao_211037_1_513c9910af95523df679991a505e44a7.jpg",
+    category: "Acessórios",
+    brand: "Cortinas",
+    stars: 4,
+    description: "Proteção de piso e móveis durante pintura."
+  }
 ]
 
 const KITS = [
@@ -144,48 +245,45 @@ interface HeaderProps {
 }
 
 const Header = ({ cartCount, onCartOpen, onGoHome, onGoCor, currentPage, setPage }: HeaderProps) => (
-  <header style={{ background: "#1a1464", padding: "10px 16px", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 2px 8px rgba(0,0,0,0.3)" }}>
-    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-      <div style={{ display: "flex", flexDirection: "column", gap: 3, cursor: "pointer" }}>
-        <div style={{ width: 18, height: 2, background: "white" }} />
-        <div style={{ width: 18, height: 2, background: "white" }} />
-        <div style={{ width: 18, height: 2, background: "white" }} />
+  <header style={{ background: "#1a1464", padding: "0", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 2px 8px rgba(0,0,0,0.3)" }}>
+    <div style={{ maxWidth: 1400, margin: "0 auto", padding: "12px 32px", display: "flex", alignItems: "center", gap: 20 }}>
+      <div onClick={onGoHome} style={{ cursor: "pointer", flexShrink: 0 }}>
+        <div style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontWeight: 900, fontSize: 32, color: "white", lineHeight: 1, letterSpacing: "-1px" }}>Silver</div>
+        <div style={{ fontSize: 9, color: "rgba(255,255,255,0.5)", letterSpacing: 3, textTransform: "uppercase" }}>tintas</div>
       </div>
-      <div onClick={onGoHome} style={{ cursor: "pointer" }}>
-        <div style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontWeight: 900, fontSize: 26, color: "white", lineHeight: 1, letterSpacing: "-1px" }}>Silver</div>
-        <div style={{ fontSize: 9, color: "rgba(255,255,255,0.5)", letterSpacing: 2, textTransform: "uppercase" }}>tintas</div>
+      <div style={{ flex: 1, maxWidth: 600, background: "white", borderRadius: 6, display: "flex", alignItems: "center", padding: "8px 14px", gap: 8 }}>
+        <Search size={16} color="#999" />
+        <span style={{ fontSize: 14, color: "#bbb" }}>Buscar tintas, ferramentas, marcas...</span>
       </div>
-      <div style={{ flex: 1, background: "white", borderRadius: 4, display: "flex", alignItems: "center", padding: "5px 10px", gap: 6 }}>
-        <Search size={14} color="#999" />
-        <span style={{ fontSize: 12, color: "#bbb" }}>buscar...</span>
+      {/* Nav links */}
+      <div style={{ display: "flex", gap: 2, alignItems: "center" }}>
+        {[
+          { id: "home", label: "Início" },
+          { id: "produtos", label: "Produtos" },
+          { id: "kits", label: "Kits" },
+          { id: "calculadora", label: "Calculadora" },
+          { id: "simulador", label: "Simulador" },
+          { id: "entrega", label: "Entrega" },
+        ].map(item => (
+          <button key={item.id} onClick={() => setPage(item.id)}
+            style={{ background: "none", border: "none", color: currentPage === item.id ? "white" : "rgba(255,255,255,0.65)", fontSize: 13, fontWeight: currentPage === item.id ? 700 : 500, cursor: "pointer", padding: "6px 12px", borderRadius: 6, borderBottom: currentPage === item.id ? "2px solid #fbbf24" : "2px solid transparent", transition: "all 0.2s", whiteSpace: "nowrap" }}>
+            {item.label}
+          </button>
+        ))}
       </div>
-      <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+      <div style={{ display: "flex", gap: 16, alignItems: "center", flexShrink: 0 }}>
         <button onClick={onGoCor}
-          style={{ display: "flex", alignItems: "center", gap: 4, background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.3)", borderRadius: 20, padding: "4px 10px", color: "white", fontSize: 11, fontWeight: 600, cursor: "pointer" }}>
-          <Paintbrush size={12} />Cor
+          style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.3)", borderRadius: 20, padding: "7px 16px", color: "white", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>
+          <Paintbrush size={14} /> Consultar Cor
         </button>
-        <User size={20} color="white" style={{ cursor: "pointer" }} />
+        <User size={22} color="white" style={{ cursor: "pointer" }} />
         <div style={{ position: "relative", cursor: "pointer" }} onClick={onCartOpen}>
-          <ShoppingCart size={20} color="white" />
+          <ShoppingCart size={22} color="white" />
           {cartCount > 0 && (
-            <span style={{ position: "absolute", top: -6, right: -6, background: "#e53e3e", color: "white", borderRadius: "50%", width: 16, height: 16, fontSize: 9, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{cartCount}</span>
+            <span style={{ position: "absolute", top: -7, right: -7, background: "#e53e3e", color: "white", borderRadius: "50%", width: 18, height: 18, fontSize: 10, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{cartCount}</span>
           )}
         </div>
       </div>
-    </div>
-    {/* Bottom nav */}
-    <div style={{ display: "flex", gap: 0, marginTop: 10, borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: 8 }}>
-      {[
-        { id: "home", label: "Início" },
-        { id: "produtos", label: "Produtos" },
-        { id: "kits", label: "Kits" },
-        { id: "calculadora", label: "Calculadora" },
-      ].map(item => (
-        <button key={item.id} onClick={() => setPage(item.id)}
-          style={{ flex: 1, background: "none", border: "none", color: currentPage === item.id ? "white" : "rgba(255,255,255,0.55)", fontSize: 11, fontWeight: currentPage === item.id ? 700 : 500, cursor: "pointer", padding: "2px 0", borderBottom: currentPage === item.id ? "2px solid #fbbf24" : "2px solid transparent", transition: "all 0.2s" }}>
-          {item.label}
-        </button>
-      ))}
     </div>
   </header>
 )
@@ -200,15 +298,17 @@ const HeroCarousel = () => {
   }, [])
   const slide = HERO_SLIDES[idx]
   return (
-    <div style={{ position: "relative", background: slide.bg, overflow: "hidden", minHeight: 200, display: "flex", alignItems: "center", transition: "background 0.5s" }}>
+    <div style={{ position: "relative", background: slide.bg, overflow: "hidden", minHeight: 340, display: "flex", alignItems: "center", transition: "background 0.5s" }}>
       <div style={{ position: "absolute", inset: 0, background: `linear-gradient(135deg, ${slide.bg} 40%, rgba(255,255,255,0.05) 100%)` }} />
-      <div style={{ position: "relative", zIndex: 2, flex: 1, padding: "20px 16px" }}>
-        <div style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", textTransform: "uppercase", letterSpacing: 2, marginBottom: 4 }}>{slide.brand}</div>
-        <div style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontSize: 36, fontWeight: 900, color: "white", lineHeight: 1 }}>{slide.title}</div>
-        <div style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", marginTop: 4 }}>{slide.sub}</div>
-      </div>
-      <div style={{ position: "relative", zIndex: 2, padding: "10px 10px 10px 0" }}>
-        <img src={slide.image} alt={slide.title} style={{ height: 160, width: 130, objectFit: "contain", filter: "drop-shadow(0 4px 16px rgba(0,0,0,0.4))" }} />
+      <div style={{ maxWidth: 1400, margin: "0 auto", width: "100%", padding: "40px 32px", display: "flex", alignItems: "center", position: "relative", zIndex: 2 }}>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", textTransform: "uppercase", letterSpacing: 3, marginBottom: 8 }}>{slide.brand}</div>
+          <div style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontSize: 64, fontWeight: 900, color: "white", lineHeight: 1 }}>{slide.title}</div>
+          <div style={{ fontSize: 18, color: "rgba(255,255,255,0.7)", marginTop: 8 }}>{slide.sub}</div>
+        </div>
+        <div style={{ padding: "10px 0" }}>
+          <img src={slide.image} alt={slide.title} style={{ height: 260, width: 210, objectFit: "contain", filter: "drop-shadow(0 8px 32px rgba(0,0,0,0.4))" }} />
+        </div>
       </div>
       <button onClick={() => setIdx(i => (i - 1 + HERO_SLIDES.length) % HERO_SLIDES.length)}
         style={{ position: "absolute", left: 8, top: "50%", transform: "translateY(-50%)", background: "rgba(255,255,255,0.2)", border: "none", borderRadius: "50%", width: 28, height: 28, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", zIndex: 3 }}>
@@ -230,7 +330,8 @@ const HeroCarousel = () => {
 // ─── QUICK FEATURES STRIP ─────────────────────────────────────────────────────
 
 const QuickFeatures = ({ setPage }: { setPage: (p: string) => void }) => (
-  <div style={{ background: "#1a1464", padding: "12px 8px", display: "flex", justifyContent: "space-around" }}>
+  <div style={{ background: "#1a1464", padding: "16px 32px" }}>
+    <div style={{ maxWidth: 1400, margin: "0 auto", display: "flex", justifyContent: "flex-start", gap: 24 }}>
     {[
       { icon: <Calculator size={18} color="#fbbf24" />, label: "Calculadora", page: "calculadora" },
       { icon: <Palette size={18} color="#fbbf24" />, label: "Simulador", page: "simulador" },
@@ -246,23 +347,26 @@ const QuickFeatures = ({ setPage }: { setPage: (p: string) => void }) => (
       </button>
     ))}
   </div>
+  </div>
 )
 
 // ─── CATEGORIES GRID ─────────────────────────────────────────────────────────
 
 const CategoriesGrid = ({ onCategoryClick }: { onCategoryClick: (cat: string) => void }) => (
-  <div style={{ background: "white", padding: "20px 16px" }}>
-    <h2 style={{ fontSize: 18, fontWeight: 700, textAlign: "center", marginBottom: 16, color: "#222" }}>O que procura?</h2>
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 8 }}>
+  <div style={{ background: "white", padding: "32px 32px" }}>
+    <div style={{ maxWidth: 1400, margin: "0 auto" }}>
+    <h2 style={{ fontSize: 20, fontWeight: 700, textAlign: "center", marginBottom: 20, color: "#222" }}>O que procura?</h2>
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 16, maxWidth: 700, margin: "0 auto" }}>
       {CATEGORIES.map(cat => (
         <div key={cat.name} onClick={() => onCategoryClick(cat.name)}
-          style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, cursor: "pointer" }}>
-          <div style={{ width: 52, height: 52, borderRadius: 12, background: "#e8ecf5", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22 }}>
+          style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
+          <div style={{ width: 64, height: 64, borderRadius: 16, background: "#e8ecf5", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, transition: "background 0.2s" }}>
             {cat.icon}
           </div>
-          <span style={{ fontSize: 9, color: "#444", textAlign: "center", fontWeight: 600, textTransform: "uppercase", lineHeight: 1.2 }}>{cat.name}</span>
+          <span style={{ fontSize: 11, color: "#444", textAlign: "center", fontWeight: 600, textTransform: "uppercase", lineHeight: 1.2 }}>{cat.name}</span>
         </div>
       ))}
+    </div>
     </div>
   </div>
 )
@@ -270,11 +374,12 @@ const CategoriesGrid = ({ onCategoryClick }: { onCategoryClick: (cat: string) =>
 // ─── FEATURED PRODUCTS ────────────────────────────────────────────────────────
 
 const FeaturedProducts = ({ onAdd, favorites, onToggleFavorite }: { onAdd: (p: Product) => void; favorites: number[]; onToggleFavorite: (id: number) => void }) => {
-  const featured = PRODUCTS.slice(0, 4)
+  const featured = PRODUCTS.slice(0, 8)
   return (
-    <div style={{ background: "#f7f8fc", padding: "20px 16px" }}>
-      <h2 style={{ fontSize: 18, fontWeight: 800, color: "#1a1464", marginBottom: 16 }}>Destaques</h2>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+    <div style={{ background: "#f7f8fc", padding: "32px 32px" }}>
+      <div style={{ maxWidth: 1400, margin: "0 auto" }}>
+      <h2 style={{ fontSize: 22, fontWeight: 800, color: "#1a1464", marginBottom: 20 }}>Destaques</h2>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16 }}>
         {featured.map(p => (
           <div key={p.id} style={{ background: "white", borderRadius: 10, border: "1px solid #e5e7eb", overflow: "hidden", boxShadow: "0 1px 4px rgba(0,0,0,0.06)" }}>
             <div style={{ background: "#f9fafb", padding: 10, position: "relative", textAlign: "center" }}>
@@ -296,43 +401,45 @@ const FeaturedProducts = ({ onAdd, favorites, onToggleFavorite }: { onAdd: (p: P
           </div>
         ))}
       </div>
+      </div>
     </div>
   )
 }
 
-// ─── KITS PAGE ────────────────────────────────────────────────────────────────
-
 const KitsPage = ({ onAddKit }: { onAddKit: (name: string, price: number) => void }) => (
   <div style={{ background: "#f7f8fc", minHeight: "100vh", padding: "0 0 80px" }}>
-    <div style={{ background: "linear-gradient(135deg, #1a1464 0%, #2d3a8c 100%)", padding: "24px 16px 20px" }}>
-      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
-        <Package size={22} color="#fbbf24" />
-        <h1 style={{ fontSize: 22, fontWeight: 800, color: "white", margin: 0 }}>Kits de Pintura</h1>
+    <div style={{ background: "linear-gradient(135deg, #1a1464 0%, #2d3a8c 100%)", padding: "32px 32px 28px" }}>
+      <div style={{ maxWidth: 1400, margin: "0 auto", display: "flex", alignItems: "center", gap: 10 }}>
+        <Package size={26} color="#fbbf24" />
+        <div>
+          <h1 style={{ fontSize: 26, fontWeight: 800, color: "white", margin: 0 }}>Kits de Pintura</h1>
+          <p style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", margin: 0, marginTop: 4 }}>Kits completos para cada ambiente. Economize e comece a pintar hoje!</p>
+        </div>
       </div>
-      <p style={{ fontSize: 12, color: "rgba(255,255,255,0.7)", margin: 0 }}>Kits completos para cada ambiente. Economize e comece a pintar hoje!</p>
     </div>
 
-    <div style={{ padding: "16px" }}>
+    <div style={{ padding: "24px 32px" }}>
+      <div style={{ maxWidth: 1400, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
       {KITS.map(kit => {
         const discount = Math.round((1 - kit.price / kit.originalPrice) * 100)
         return (
-          <div key={kit.id} style={{ background: "white", borderRadius: 14, marginBottom: 16, overflow: "hidden", boxShadow: "0 2px 12px rgba(0,0,0,0.08)", border: "1px solid #e5e7eb" }}>
-            <div style={{ background: kit.color, padding: "16px 16px 12px", display: "flex", alignItems: "center", gap: 12 }}>
-              <div style={{ fontSize: 36 }}>{kit.icon}</div>
+          <div key={kit.id} style={{ background: "white", borderRadius: 14, overflow: "hidden", boxShadow: "0 2px 12px rgba(0,0,0,0.08)", border: "1px solid #e5e7eb" }}>
+            <div style={{ background: kit.color, padding: "20px 20px 16px", display: "flex", alignItems: "center", gap: 12 }}>
+              <div style={{ fontSize: 42 }}>{kit.icon}</div>
               <div>
-                <div style={{ fontSize: 16, fontWeight: 800, color: "white" }}>{kit.name}</div>
-                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.8)", marginTop: 2 }}>{kit.description}</div>
+                <div style={{ fontSize: 18, fontWeight: 800, color: "white" }}>{kit.name}</div>
+                <div style={{ fontSize: 12, color: "rgba(255,255,255,0.8)", marginTop: 2 }}>{kit.description}</div>
               </div>
-              <div style={{ marginLeft: "auto", background: "#ef4444", borderRadius: 8, padding: "4px 8px", fontSize: 12, fontWeight: 800, color: "white" }}>
+              <div style={{ marginLeft: "auto", background: "#ef4444", borderRadius: 8, padding: "4px 10px", fontSize: 13, fontWeight: 800, color: "white" }}>
                 -{discount}%
               </div>
             </div>
-            <div style={{ padding: "14px 16px" }}>
-              <div style={{ marginBottom: 12 }}>
+            <div style={{ padding: "16px 20px" }}>
+              <div style={{ marginBottom: 14 }}>
                 <div style={{ fontSize: 11, fontWeight: 700, color: "#666", marginBottom: 8, textTransform: "uppercase", letterSpacing: 1 }}>Inclui:</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                   {kit.items.map(item => (
-                    <span key={item} style={{ background: "#f0f4ff", color: "#1a1464", fontSize: 10, fontWeight: 600, padding: "3px 8px", borderRadius: 20, display: "flex", alignItems: "center", gap: 4 }}>
+                    <span key={item} style={{ background: "#f0f4ff", color: "#1a1464", fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, display: "flex", alignItems: "center", gap: 4 }}>
                       <Check size={10} /> {item}
                     </span>
                   ))}
@@ -340,12 +447,12 @@ const KitsPage = ({ onAddKit }: { onAddKit: (name: string, price: number) => voi
               </div>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                 <div>
-                  <div style={{ fontSize: 11, color: "#999", textDecoration: "line-through" }}>{fmt(kit.originalPrice)}</div>
-                  <div style={{ fontSize: 20, fontWeight: 900, color: "#1a1464" }}>{fmt(kit.price)}</div>
-                  <div style={{ fontSize: 10, color: "#059669", fontWeight: 600 }}>ou 6x de {fmt(kit.price / 6)} s/juros</div>
+                  <div style={{ fontSize: 12, color: "#999", textDecoration: "line-through" }}>{fmt(kit.originalPrice)}</div>
+                  <div style={{ fontSize: 22, fontWeight: 900, color: "#1a1464" }}>{fmt(kit.price)}</div>
+                  <div style={{ fontSize: 11, color: "#059669", fontWeight: 600 }}>ou 6x de {fmt(kit.price / 6)} s/juros</div>
                 </div>
                 <button onClick={() => onAddKit(kit.name, kit.price)}
-                  style={{ background: "#1a1464", color: "white", border: "none", borderRadius: 10, padding: "12px 20px", fontSize: 13, fontWeight: 800, cursor: "pointer" }}>
+                  style={{ background: "#1a1464", color: "white", border: "none", borderRadius: 10, padding: "14px 22px", fontSize: 14, fontWeight: 800, cursor: "pointer" }}>
                   Adicionar Kit
                 </button>
               </div>
@@ -353,6 +460,7 @@ const KitsPage = ({ onAddKit }: { onAddKit: (name: string, price: number) => voi
           </div>
         )
       })}
+      </div>
     </div>
   </div>
 )
@@ -889,34 +997,37 @@ const ProductsPage = ({ onAdd, favorites, onToggleFavorite, initialCategory }: {
 
   return (
     <div style={{ background: "#f7f8fc", minHeight: "100vh" }}>
-      <div style={{ background: "white", padding: "16px", borderBottom: "1px solid #e5e7eb" }}>
-        <h1 style={{ fontSize: 20, fontWeight: 800, color: "#1a1464", marginBottom: 12 }}>Produtos</h1>
-        <div style={{ display: "flex", gap: 8, overflowX: "auto", paddingBottom: 4 }}>
-          {cats.map(cat => (
-            <button key={cat} onClick={() => setSelCat(cat)}
-              style={{ flexShrink: 0, padding: "6px 14px", borderRadius: 20, border: selCat === cat ? "none" : "1px solid #d1d5db", background: selCat === cat ? "#1a1464" : "white", color: selCat === cat ? "white" : "#555", fontSize: 12, fontWeight: 600, cursor: "pointer" }}>
-              {cat}
-            </button>
-          ))}
+      <div style={{ background: "white", padding: "20px 32px", borderBottom: "1px solid #e5e7eb" }}>
+        <div style={{ maxWidth: 1400, margin: "0 auto", display: "flex", alignItems: "center", gap: 16 }}>
+          <h1 style={{ fontSize: 24, fontWeight: 800, color: "#1a1464", margin: 0 }}>Produtos</h1>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+            {cats.map(cat => (
+              <button key={cat} onClick={() => setSelCat(cat)}
+                style={{ padding: "7px 16px", borderRadius: 20, border: selCat === cat ? "none" : "1px solid #d1d5db", background: selCat === cat ? "#1a1464" : "white", color: selCat === cat ? "white" : "#555", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>
+                {cat}
+              </button>
+            ))}
+          </div>
+          <div style={{ marginLeft: "auto", fontSize: 13, color: "#888" }}>{filtered.length} produto(s)</div>
         </div>
       </div>
-      <div style={{ padding: "16px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+      <div style={{ maxWidth: 1400, margin: "0 auto", padding: "24px 32px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20 }}>
         {filtered.map(p => (
-          <div key={p.id} style={{ background: "white", borderRadius: 10, border: "1px solid #e5e7eb", overflow: "hidden", boxShadow: "0 1px 4px rgba(0,0,0,0.06)" }}>
-            <div style={{ background: "#f9fafb", padding: 10, position: "relative", textAlign: "center" }}>
-              <img src={p.imageUrl} alt={p.name} style={{ height: 110, width: "100%", objectFit: "contain" }} />
-              <button onClick={() => onToggleFavorite(p.id)} style={{ position: "absolute", top: 8, right: 8, background: favorites.includes(p.id) ? "#ef4444" : "white", border: "1px solid #ddd", borderRadius: "50%", width: 28, height: 28, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" }}>
-                <Heart size={14} color={favorites.includes(p.id) ? "white" : "#999"} fill={favorites.includes(p.id) ? "white" : "none"} />
+          <div key={p.id} style={{ background: "white", borderRadius: 12, border: "1px solid #e5e7eb", overflow: "hidden", boxShadow: "0 2px 8px rgba(0,0,0,0.06)", transition: "box-shadow 0.2s" }}>
+            <div style={{ background: "#f9fafb", padding: 16, position: "relative", textAlign: "center" }}>
+              <img src={p.imageUrl} alt={p.name} style={{ height: 140, width: "100%", objectFit: "contain" }} />
+              <button onClick={() => onToggleFavorite(p.id)} style={{ position: "absolute", top: 10, right: 10, background: favorites.includes(p.id) ? "#ef4444" : "white", border: "1px solid #ddd", borderRadius: "50%", width: 32, height: 32, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" }}>
+                <Heart size={16} color={favorites.includes(p.id) ? "white" : "#999"} fill={favorites.includes(p.id) ? "white" : "none"} />
               </button>
             </div>
-            <div style={{ padding: "10px 10px 12px" }}>
-              <div style={{ fontSize: 10, fontWeight: 700, color: "#1a1464", marginBottom: 2 }}>{p.brand}</div>
-              <div style={{ fontSize: 12, fontWeight: 600, color: "#333", lineHeight: 1.3, marginBottom: 4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }}>{p.name}</div>
-              <StarRow count={p.stars} />
-              {p.coverage && <div style={{ fontSize: 10, color: "#666", marginTop: 2 }}>Rendimento: {p.coverage} m²/18L</div>}
-              <div style={{ fontSize: 15, fontWeight: 800, color: "#1a1464", margin: "6px 0 4px" }}>{fmt(p.price)}</div>
-              <div style={{ fontSize: 10, color: "#059669", fontWeight: 600, marginBottom: 8 }}>6x de {fmt(p.price / 6)}</div>
-              <button onClick={() => onAdd(p)} style={{ width: "100%", background: "#1a1464", color: "white", border: "none", borderRadius: 6, padding: "8px 0", fontSize: 12, fontWeight: 700, cursor: "pointer" }}>
+            <div style={{ padding: "12px 14px 16px" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#1a1464", marginBottom: 3 }}>{p.brand}</div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: "#333", lineHeight: 1.3, marginBottom: 6, minHeight: 40 }}>{p.name}</div>
+              <StarRow count={p.stars} size={14} />
+              {p.coverage && <div style={{ fontSize: 11, color: "#666", marginTop: 4 }}>Rendimento: {p.coverage} m²/18L</div>}
+              <div style={{ fontSize: 18, fontWeight: 800, color: "#1a1464", margin: "8px 0 4px" }}>{fmt(p.price)}</div>
+              <div style={{ fontSize: 11, color: "#059669", fontWeight: 600, marginBottom: 10 }}>6x de {fmt(p.price / 6)}</div>
+              <button onClick={() => onAdd(p)} style={{ width: "100%", background: "#1a1464", color: "white", border: "none", borderRadius: 8, padding: "10px 0", fontSize: 13, fontWeight: 700, cursor: "pointer" }}>
                 COMPRAR
               </button>
             </div>
@@ -1067,7 +1178,7 @@ export default function App() {
   const goToCategory = (_cat: string) => setPage("produtos")
 
   return (
-    <div style={{ minHeight: "100vh", background: "#f7f8fc", fontFamily: "system-ui, -apple-system, sans-serif", width: "100%", maxWidth: 1200, margin: "0 auto" }}>
+    <div style={{ minHeight: "100vh", background: "#f7f8fc", fontFamily: "system-ui, -apple-system, sans-serif", width: "100%" }}>
       <Header cartCount={cartCount} onCartOpen={() => setCartOpen(true)} onGoHome={() => setPage("home")} onGoCor={() => setPage("cor")} currentPage={page} setPage={setPage} />
 
       {page === "home" && (
